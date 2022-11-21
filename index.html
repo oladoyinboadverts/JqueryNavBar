@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<lang=en>
+<head>
+<meta name="viewport" content="width:devce-width, initial-width:1.0">
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+<title>Simple Jquery Navbar</title>
+
+</head>
+<body>
+
+<button>Menu</button>
+<div style="background-color:black;color:white;display:none;">
+<a href="/">link 1</a>
+<a href="/">link 1</a>
+<a href="/">link 1</a>
+</div>
+
+
+<footer>
+<script>
+
+	
+$(document).ready(function(){
+	$("button").on({
+		click: function(){
+			$("div").toggle();
+			
+		},
+		
+		mouseleave: function(){
+			$("div").css("display:", "hidden");
+		}
+		
+	});
+	
+});
+	
+
+
+</script>
+
+
+</footer>
+
+
+
+
+</body></html>
