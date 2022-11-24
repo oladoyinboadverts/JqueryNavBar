@@ -6,10 +6,23 @@
 <title>Simple Jquery Navbar</title>
 
 </head>
+	
+	<style>
+	.show{
+		
+		display: block !important;
+		}
+		
+		.hide{
+                background-color:black;
+		color:white;
+	        display:none;
+		}
+	</style>
 <body>
 
 <button>Menu</button>
-<div style="background-color:black;color:white;display:none;">
+<div class="hide">
 <a href="/">link 1</a>
 <a href="/">link 1</a>
 <a href="/">link 1</a>
@@ -23,7 +36,7 @@
 $(document).ready(function(){
 	$("button").on({
 		click: function(){
-			$("div").toggle();
+			$(".hide").toggleClass("show");
 			
 		},
 		
